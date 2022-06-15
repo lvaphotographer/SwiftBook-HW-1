@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLO-OC-jme">
+                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="CLO-OC-jme">
                                 <rect key="frame" x="38" y="87" width="352" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3x7-X3-eGc">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x7-X3-eGc">
                                 <rect key="frame" x="38" y="487" width="352" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3x7-X3-eGc" secondAttribute="bottom" constant="53" id="AFy-Y4-bf8"/>
+                            <constraint firstItem="CLO-OC-jme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="EB7-qy-gpP"/>
+                            <constraint firstItem="3x7-X3-eGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="EDP-u9-Gjt"/>
+                            <constraint firstItem="3x7-X3-eGc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="443" id="M34-mn-2dD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3x7-X3-eGc" secondAttribute="trailing" constant="38" id="RiP-la-ffC"/>
+                            <constraint firstItem="CLO-OC-jme" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="VHV-A1-LFd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CLO-OC-jme" secondAttribute="bottom" constant="453" id="fk6-kK-LWZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CLO-OC-jme" secondAttribute="trailing" constant="38" id="hPI-hD-ZDH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
